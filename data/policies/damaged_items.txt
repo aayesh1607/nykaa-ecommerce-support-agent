@@ -1,0 +1,3 @@
+Policy: Damaged Items
+
+Customers receiving damaged products should contact support with order details and photographs.

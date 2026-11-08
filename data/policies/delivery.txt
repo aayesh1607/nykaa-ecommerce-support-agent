@@ -1,0 +1,3 @@
+Policy: Delivery
+
+Estimated delivery dates are indicative and may change because of logistics delays.

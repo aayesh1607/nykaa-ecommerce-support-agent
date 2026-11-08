@@ -1,0 +1,3 @@
+Policy: Cancellations
+
+Orders may be cancelled before dispatch. Once shipped, cancellation may not be available.

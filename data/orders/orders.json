@@ -1,0 +1,502 @@
+[
+  {
+    "order_id": "NYK-0001",
+    "customer_id": "CUST-001",
+    "product": "Maybelline Mascara",
+    "quantity": 1,
+    "amount_inr": 2552,
+    "status": "shipped",
+    "order_date": "2026-10-08",
+    "estimated_delivery": "2026-11-09"
+  },
+  {
+    "order_id": "NYK-0002",
+    "customer_id": "CUST-002",
+    "product": "Maybelline Mascara",
+    "quantity": 3,
+    "amount_inr": 4766,
+    "status": "confirmed",
+    "order_date": "2026-10-19",
+    "estimated_delivery": "2026-11-18"
+  },
+  {
+    "order_id": "NYK-0003",
+    "customer_id": "CUST-003",
+    "product": "Lakme Foundation",
+    "quantity": 1,
+    "amount_inr": 1066,
+    "status": "shipped",
+    "order_date": "2026-10-08",
+    "estimated_delivery": "2026-11-05"
+  },
+  {
+    "order_id": "NYK-0004",
+    "customer_id": "CUST-004",
+    "product": "Neutrogena Sunscreen",
+    "quantity": 1,
+    "amount_inr": 4763,
+    "status": "cancelled",
+    "order_date": "2026-10-08",
+    "estimated_delivery": "2026-11-19"
+  },
+  {
+    "order_id": "NYK-0005",
+    "customer_id": "CUST-005",
+    "product": "Mamaearth Face Wash",
+    "quantity": 2,
+    "amount_inr": 352,
+    "status": "packed",
+    "order_date": "2026-10-23",
+    "estimated_delivery": "2026-11-18"
+  },
+  {
+    "order_id": "NYK-0006",
+    "customer_id": "CUST-006",
+    "product": "Cetaphil Cleanser",
+    "quantity": 2,
+    "amount_inr": 1572,
+    "status": "shipped",
+    "order_date": "2026-10-31",
+    "estimated_delivery": "2026-11-15"
+  },
+  {
+    "order_id": "NYK-0007",
+    "customer_id": "CUST-007",
+    "product": "Maybelline Mascara",
+    "quantity": 1,
+    "amount_inr": 3411,
+    "status": "confirmed",
+    "order_date": "2026-10-12",
+    "estimated_delivery": "2026-11-16"
+  },
+  {
+    "order_id": "NYK-0008",
+    "customer_id": "CUST-008",
+    "product": "Mamaearth Face Wash",
+    "quantity": 2,
+    "amount_inr": 654,
+    "status": "return_requested",
+    "order_date": "2026-10-18",
+    "estimated_delivery": "2026-11-08"
+  },
+  {
+    "order_id": "NYK-0009",
+    "customer_id": "CUST-009",
+    "product": "Plum Body Lotion",
+    "quantity": 1,
+    "amount_inr": 4821,
+    "status": "out_for_delivery",
+    "order_date": "2026-10-27",
+    "estimated_delivery": "2026-11-16"
+  },
+  {
+    "order_id": "NYK-0010",
+    "customer_id": "CUST-010",
+    "product": "Mamaearth Face Wash",
+    "quantity": 1,
+    "amount_inr": 868,
+    "status": "placed",
+    "order_date": "2026-10-22",
+    "estimated_delivery": "2026-11-12"
+  },
+  {
+    "order_id": "NYK-0011",
+    "customer_id": "CUST-011",
+    "product": "Minimalist Niacinamide Serum",
+    "quantity": 1,
+    "amount_inr": 2206,
+    "status": "confirmed",
+    "order_date": "2026-10-13",
+    "estimated_delivery": "2026-11-13"
+  },
+  {
+    "order_id": "NYK-0012",
+    "customer_id": "CUST-012",
+    "product": "The Ordinary Hyaluronic Acid",
+    "quantity": 3,
+    "amount_inr": 3287,
+    "status": "packed",
+    "order_date": "2026-10-12",
+    "estimated_delivery": "2026-11-16"
+  },
+  {
+    "order_id": "NYK-0013",
+    "customer_id": "CUST-013",
+    "product": "L'Oreal Shampoo",
+    "quantity": 3,
+    "amount_inr": 2486,
+    "status": "confirmed",
+    "order_date": "2026-10-20",
+    "estimated_delivery": "2026-11-10"
+  },
+  {
+    "order_id": "NYK-0014",
+    "customer_id": "CUST-014",
+    "product": "Neutrogena Sunscreen",
+    "quantity": 3,
+    "amount_inr": 2304,
+    "status": "packed",
+    "order_date": "2026-10-15",
+    "estimated_delivery": "2026-11-17"
+  },
+  {
+    "order_id": "NYK-0015",
+    "customer_id": "CUST-015",
+    "product": "Minimalist Niacinamide Serum",
+    "quantity": 3,
+    "amount_inr": 4861,
+    "status": "shipped",
+    "order_date": "2026-10-22",
+    "estimated_delivery": "2026-11-15"
+  },
+  {
+    "order_id": "NYK-0016",
+    "customer_id": "CUST-016",
+    "product": "Lakme Foundation",
+    "quantity": 1,
+    "amount_inr": 561,
+    "status": "delivered",
+    "order_date": "2026-10-13",
+    "estimated_delivery": "2026-11-13"
+  },
+  {
+    "order_id": "NYK-0017",
+    "customer_id": "CUST-017",
+    "product": "Maybelline Mascara",
+    "quantity": 1,
+    "amount_inr": 4945,
+    "status": "delivered",
+    "order_date": "2026-10-07",
+    "estimated_delivery": "2026-11-20"
+  },
+  {
+    "order_id": "NYK-0018",
+    "customer_id": "CUST-018",
+    "product": "Plum Body Lotion",
+    "quantity": 3,
+    "amount_inr": 4057,
+    "status": "packed",
+    "order_date": "2026-10-09",
+    "estimated_delivery": "2026-11-09"
+  },
+  {
+    "order_id": "NYK-0019",
+    "customer_id": "CUST-019",
+    "product": "L'Oreal Shampoo",
+    "quantity": 3,
+    "amount_inr": 4897,
+    "status": "out_for_delivery",
+    "order_date": "2026-10-24",
+    "estimated_delivery": "2026-11-18"
+  },
+  {
+    "order_id": "NYK-0020",
+    "customer_id": "CUST-020",
+    "product": "Mamaearth Face Wash",
+    "quantity": 2,
+    "amount_inr": 3264,
+    "status": "shipped",
+    "order_date": "2026-10-05",
+    "estimated_delivery": "2026-11-20"
+  },
+  {
+    "order_id": "NYK-0021",
+    "customer_id": "CUST-021",
+    "product": "Maybelline Mascara",
+    "quantity": 1,
+    "amount_inr": 1197,
+    "status": "packed",
+    "order_date": "2026-10-21",
+    "estimated_delivery": "2026-11-10"
+  },
+  {
+    "order_id": "NYK-0022",
+    "customer_id": "CUST-022",
+    "product": "Plum Body Lotion",
+    "quantity": 3,
+    "amount_inr": 819,
+    "status": "cancelled",
+    "order_date": "2026-10-13",
+    "estimated_delivery": "2026-11-19"
+  },
+  {
+    "order_id": "NYK-0023",
+    "customer_id": "CUST-023",
+    "product": "Neutrogena Sunscreen",
+    "quantity": 2,
+    "amount_inr": 4831,
+    "status": "placed",
+    "order_date": "2026-10-22",
+    "estimated_delivery": "2026-11-08"
+  },
+  {
+    "order_id": "NYK-0024",
+    "customer_id": "CUST-024",
+    "product": "Neutrogena Sunscreen",
+    "quantity": 2,
+    "amount_inr": 3085,
+    "status": "confirmed",
+    "order_date": "2026-10-10",
+    "estimated_delivery": "2026-11-18"
+  },
+  {
+    "order_id": "NYK-0025",
+    "customer_id": "CUST-025",
+    "product": "Nykaa Matte Lipstick",
+    "quantity": 2,
+    "amount_inr": 325,
+    "status": "out_for_delivery",
+    "order_date": "2026-10-17",
+    "estimated_delivery": "2026-11-10"
+  },
+  {
+    "order_id": "NYK-0026",
+    "customer_id": "CUST-026",
+    "product": "Neutrogena Sunscreen",
+    "quantity": 1,
+    "amount_inr": 2743,
+    "status": "shipped",
+    "order_date": "2026-10-05",
+    "estimated_delivery": "2026-11-16"
+  },
+  {
+    "order_id": "NYK-0027",
+    "customer_id": "CUST-027",
+    "product": "Nykaa Matte Lipstick",
+    "quantity": 3,
+    "amount_inr": 4643,
+    "status": "placed",
+    "order_date": "2026-10-20",
+    "estimated_delivery": "2026-11-15"
+  },
+  {
+    "order_id": "NYK-0028",
+    "customer_id": "CUST-028",
+    "product": "The Ordinary Hyaluronic Acid",
+    "quantity": 1,
+    "amount_inr": 1215,
+    "status": "delivered",
+    "order_date": "2026-10-29",
+    "estimated_delivery": "2026-11-14"
+  },
+  {
+    "order_id": "NYK-0029",
+    "customer_id": "CUST-029",
+    "product": "L'Oreal Shampoo",
+    "quantity": 1,
+    "amount_inr": 2272,
+    "status": "confirmed",
+    "order_date": "2026-10-03",
+    "estimated_delivery": "2026-11-20"
+  },
+  {
+    "order_id": "NYK-0030",
+    "customer_id": "CUST-030",
+    "product": "Maybelline Mascara",
+    "quantity": 3,
+    "amount_inr": 1329,
+    "status": "packed",
+    "order_date": "2026-10-22",
+    "estimated_delivery": "2026-11-20"
+  },
+  {
+    "order_id": "NYK-0031",
+    "customer_id": "CUST-031",
+    "product": "Neutrogena Sunscreen",
+    "quantity": 1,
+    "amount_inr": 2470,
+    "status": "cancelled",
+    "order_date": "2026-10-31",
+    "estimated_delivery": "2026-11-11"
+  },
+  {
+    "order_id": "NYK-0032",
+    "customer_id": "CUST-032",
+    "product": "Neutrogena Sunscreen",
+    "quantity": 3,
+    "amount_inr": 1946,
+    "status": "out_for_delivery",
+    "order_date": "2026-10-13",
+    "estimated_delivery": "2026-11-16"
+  },
+  {
+    "order_id": "NYK-0033",
+    "customer_id": "CUST-033",
+    "product": "The Ordinary Hyaluronic Acid",
+    "quantity": 3,
+    "amount_inr": 3997,
+    "status": "confirmed",
+    "order_date": "2026-10-08",
+    "estimated_delivery": "2026-11-12"
+  },
+  {
+    "order_id": "NYK-0034",
+    "customer_id": "CUST-034",
+    "product": "Maybelline Mascara",
+    "quantity": 2,
+    "amount_inr": 471,
+    "status": "shipped",
+    "order_date": "2026-10-19",
+    "estimated_delivery": "2026-11-12"
+  },
+  {
+    "order_id": "NYK-0035",
+    "customer_id": "CUST-035",
+    "product": "Lakme Foundation",
+    "quantity": 1,
+    "amount_inr": 781,
+    "status": "shipped",
+    "order_date": "2026-10-03",
+    "estimated_delivery": "2026-11-06"
+  },
+  {
+    "order_id": "NYK-0036",
+    "customer_id": "CUST-036",
+    "product": "Cetaphil Cleanser",
+    "quantity": 1,
+    "amount_inr": 4510,
+    "status": "shipped",
+    "order_date": "2026-10-09",
+    "estimated_delivery": "2026-11-20"
+  },
+  {
+    "order_id": "NYK-0037",
+    "customer_id": "CUST-037",
+    "product": "L'Oreal Shampoo",
+    "quantity": 3,
+    "amount_inr": 1382,
+    "status": "return_requested",
+    "order_date": "2026-10-08",
+    "estimated_delivery": "2026-11-20"
+  },
+  {
+    "order_id": "NYK-0038",
+    "customer_id": "CUST-038",
+    "product": "Plum Body Lotion",
+    "quantity": 1,
+    "amount_inr": 1071,
+    "status": "confirmed",
+    "order_date": "2026-10-22",
+    "estimated_delivery": "2026-11-18"
+  },
+  {
+    "order_id": "NYK-0039",
+    "customer_id": "CUST-039",
+    "product": "Cetaphil Cleanser",
+    "quantity": 2,
+    "amount_inr": 3666,
+    "status": "return_requested",
+    "order_date": "2026-10-28",
+    "estimated_delivery": "2026-11-06"
+  },
+  {
+    "order_id": "NYK-0040",
+    "customer_id": "CUST-040",
+    "product": "Maybelline Mascara",
+    "quantity": 1,
+    "amount_inr": 3597,
+    "status": "delivered",
+    "order_date": "2026-10-26",
+    "estimated_delivery": "2026-11-08"
+  },
+  {
+    "order_id": "NYK-0041",
+    "customer_id": "CUST-041",
+    "product": "L'Oreal Shampoo",
+    "quantity": 1,
+    "amount_inr": 1857,
+    "status": "return_requested",
+    "order_date": "2026-10-05",
+    "estimated_delivery": "2026-11-18"
+  },
+  {
+    "order_id": "NYK-0042",
+    "customer_id": "CUST-042",
+    "product": "Nykaa Matte Lipstick",
+    "quantity": 2,
+    "amount_inr": 4088,
+    "status": "shipped",
+    "order_date": "2026-10-28",
+    "estimated_delivery": "2026-11-07"
+  },
+  {
+    "order_id": "NYK-0043",
+    "customer_id": "CUST-043",
+    "product": "The Ordinary Hyaluronic Acid",
+    "quantity": 3,
+    "amount_inr": 1101,
+    "status": "placed",
+    "order_date": "2026-10-21",
+    "estimated_delivery": "2026-11-05"
+  },
+  {
+    "order_id": "NYK-0044",
+    "customer_id": "CUST-044",
+    "product": "Maybelline Mascara",
+    "quantity": 1,
+    "amount_inr": 1661,
+    "status": "cancelled",
+    "order_date": "2026-10-16",
+    "estimated_delivery": "2026-11-20"
+  },
+  {
+    "order_id": "NYK-0045",
+    "customer_id": "CUST-045",
+    "product": "L'Oreal Shampoo",
+    "quantity": 2,
+    "amount_inr": 779,
+    "status": "packed",
+    "order_date": "2026-10-13",
+    "estimated_delivery": "2026-11-05"
+  },
+  {
+    "order_id": "NYK-0046",
+    "customer_id": "CUST-046",
+    "product": "Plum Body Lotion",
+    "quantity": 2,
+    "amount_inr": 4026,
+    "status": "out_for_delivery",
+    "order_date": "2026-10-14",
+    "estimated_delivery": "2026-11-20"
+  },
+  {
+    "order_id": "NYK-0047",
+    "customer_id": "CUST-047",
+    "product": "Nykaa Matte Lipstick",
+    "quantity": 1,
+    "amount_inr": 2729,
+    "status": "shipped",
+    "order_date": "2026-10-31",
+    "estimated_delivery": "2026-11-06"
+  },
+  {
+    "order_id": "NYK-0048",
+    "customer_id": "CUST-048",
+    "product": "Mamaearth Face Wash",
+    "quantity": 3,
+    "amount_inr": 4740,
+    "status": "placed",
+    "order_date": "2026-10-24",
+    "estimated_delivery": "2026-11-15"
+  },
+  {
+    "order_id": "NYK-0049",
+    "customer_id": "CUST-049",
+    "product": "Lakme Foundation",
+    "quantity": 1,
+    "amount_inr": 4204,
+    "status": "packed",
+    "order_date": "2026-10-02",
+    "estimated_delivery": "2026-11-07"
+  },
+  {
+    "order_id": "NYK-0050",
+    "customer_id": "CUST-050",
+    "product": "Nykaa Matte Lipstick",
+    "quantity": 1,
+    "amount_inr": 855,
+    "status": "shipped",
+    "order_date": "2026-10-13",
+    "estimated_delivery": "2026-11-08"
+  }
+]

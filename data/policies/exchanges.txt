@@ -1,0 +1,3 @@
+Policy: Exchanges
+
+Product exchanges depend on category eligibility, stock availability, and inspection.

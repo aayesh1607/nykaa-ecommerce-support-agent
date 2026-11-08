@@ -1,0 +1,3 @@
+Policy: Cod
+
+Cash on Delivery availability depends on location, order value, and product eligibility.

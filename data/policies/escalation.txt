@@ -1,0 +1,3 @@
+Policy: Escalation
+
+Complex disputes, suspicious requests, unresolved complaints, and policy exceptions must be escalated to human support.

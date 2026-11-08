@@ -1,0 +1,3 @@
+Policy: Missing Items
+
+Missing-item claims require order verification and may require package photographs.

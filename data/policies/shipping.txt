@@ -1,0 +1,3 @@
+Policy: Shipping
+
+Shipping availability and charges depend on delivery location, order value, and selected delivery method.

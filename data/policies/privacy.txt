@@ -1,0 +1,3 @@
+Policy: Privacy
+
+Customer information must only be used for authorized support purposes and should not be exposed to other customers.

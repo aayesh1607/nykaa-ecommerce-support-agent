@@ -1,0 +1,3 @@
+Policy: Payments
+
+Supported payment methods depend on checkout availability. Customers should never share OTPs or passwords.
