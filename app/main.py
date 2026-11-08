@@ -1,16 +1,23 @@
 
+import os
+import asyncio
+
 from fastapi import FastAPI, WebSocket, WebSocketDisconnect
 from pydantic import BaseModel, Field
 
 from app.services.support_workflow import CustomerSupportWorkflow
 from app.review.autogen_review import AutoGenReviewStage
+from app.review.live_autogen import LiveAutoGenReviewStage
 from app.agents.live_crew import LiveCrewAIWorkflow, live_crewai_enabled
 
 
 app = FastAPI(
     title="Nykaa E-commerce Multi-Agent Support System",
-    description="E-commerce support with RAG, order lookup, CrewAI, and review.",
-    version="1.2.0",
+    description=(
+        "E-commerce support with RAG, order lookup, "
+        "CrewAI, AutoGen review, and human escalation."
+    ),
+    version="1.3.0",
 )
 
 workflow = CustomerSupportWorkflow()
@@ -23,7 +30,7 @@ class SupportRequest(BaseModel):
     customer_id: str = ""
 
 
-def process_support_request(
+def prepare_support_response(
     question: str,
     order_id: str = "",
     customer_id: str = "",
@@ -40,8 +47,7 @@ def process_support_request(
             verified_answer = verified_response["answer"].strip()
             generated_answer = response["answer"].strip()
 
-            # Conservative grounding safeguard:
-            # The original verified answer must be preserved.
+            # Conservative grounding safeguard.
             if verified_answer.lower() not in generated_answer.lower():
                 response = {
                     **response,
@@ -67,7 +73,49 @@ def process_support_request(
                 "mode": "LIVE_CREWAI_ERROR",
             }
 
-    review = reviewer.review(question, response)
+    return response
+
+
+async def review_support_response(question: str, response: dict):
+    live_review_enabled = (
+        os.getenv("REVIEW_MODE", "MOCK_LLM").upper()
+        == "LIVE_AUTOGEN"
+    )
+
+    if live_review_enabled and not response["requires_human"]:
+        try:
+            return await LiveAutoGenReviewStage().review_async(
+                question, response
+            )
+        except Exception:
+            return {
+                "approved": False,
+                "requires_human": True,
+                "quality_review": "ESCALATE: AutoGen review failed.",
+                "safety_review": "ESCALATE: Automated review unavailable.",
+                "reviewers": [
+                    "quality_reviewer",
+                    "safety_reviewer",
+                ],
+                "mode": "LIVE_AUTOGEN_ERROR",
+            }
+
+    return reviewer.review(question, response)
+
+
+async def process_support_request_async(
+    question: str,
+    order_id: str = "",
+    customer_id: str = "",
+):
+    response = await asyncio.to_thread(
+        prepare_support_response,
+        question,
+        order_id,
+        customer_id,
+    )
+
+    review = await review_support_response(question, response)
 
     return {
         "response": response,
@@ -80,11 +128,30 @@ def process_support_request(
     }
 
 
+def process_support_request(
+    question: str,
+    order_id: str = "",
+    customer_id: str = "",
+):
+    return asyncio.run(
+        process_support_request_async(
+            question,
+            order_id,
+            customer_id,
+        )
+    )
+
+
 @app.get("/")
 def home():
     return {
         "message": "Welcome to Nykaa E-commerce Support System",
-        "mode": "LIVE_CREWAI" if live_crewai_enabled() else "MOCK_LLM",
+        "mode": (
+            "LIVE_CREWAI"
+            if live_crewai_enabled()
+            else "MOCK_LLM"
+        ),
+        "review_mode": os.getenv("REVIEW_MODE", "MOCK_LLM"),
     }
 
 
@@ -94,8 +161,8 @@ def health():
 
 
 @app.post("/support/chat")
-def support_chat(request: SupportRequest):
-    return process_support_request(
+async def support_chat(request: SupportRequest):
+    return await process_support_request_async(
         request.question,
         request.order_id,
         request.customer_id,
@@ -103,8 +170,8 @@ def support_chat(request: SupportRequest):
 
 
 @app.get("/support/order-status")
-def order_status(order_id: str, customer_id: str):
-    return process_support_request(
+async def order_status(order_id: str, customer_id: str):
+    return await process_support_request_async(
         "Where is my order?",
         order_id,
         customer_id,
@@ -120,7 +187,7 @@ async def support_websocket(websocket: WebSocket):
             data = await websocket.receive_json()
             request = SupportRequest.model_validate(data)
 
-            result = process_support_request(
+            result = await process_support_request_async(
                 request.question,
                 request.order_id,
                 request.customer_id,
