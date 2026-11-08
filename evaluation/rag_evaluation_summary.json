@@ -1,0 +1,20 @@
+{
+  "timestamp_utc": "2026-11-08T18:13:15.373604+00:00",
+  "total_queries": 15,
+  "index": {
+    "full_documents": 12,
+    "sentence_chunks": 16
+  },
+  "results": {
+    "full": {
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "average_latency_ms": 639.42
+    },
+    "chunks": {
+      "hit_at_1": 1.0,
+      "hit_at_3": 1.0,
+      "average_latency_ms": 598.46
+    }
+  }
+}
