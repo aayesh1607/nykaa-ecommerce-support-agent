@@ -142,3 +142,56 @@ as official Nykaa policies.
 - Expand prompt-injection and PII protection.
 - Evaluate retrieval quality using a labeled dataset.
 - Add structured request logging and request budgets.
+
+
+## RAG Retrieval Evaluation
+
+The project evaluates two ChromaDB retrieval strategies using
+15 predefined customer-support questions and 12 fictional
+e-commerce policy documents.
+
+### Retrieval Strategies
+
+1. Full-document retrieval: Each policy document is indexed
+   as a complete document.
+
+2. Sentence-chunk retrieval: Policy documents are split into
+   sentence-level chunks before indexing.
+
+### Evaluation Results
+
+| Metric | Full Documents | Sentence Chunks |
+|---|---:|---:|
+| Hit@1 | 100.00% | 100.00% |
+| Hit@3 | 100.00% | 100.00% |
+| Average Retrieval Latency | 639.42 ms | 598.46 ms |
+
+Both retrieval strategies successfully identified the expected
+policy source in the top three results for all 15 test questions.
+
+Sentence-chunk retrieval demonstrated approximately 6.4%
+lower average latency in this evaluation run.
+
+### Evaluation Methodology
+
+- Total evaluation questions: 15
+- Policy documents: 12
+- Full-document index entries: 12
+- Sentence-chunk index entries: 16
+- Retrieval metrics: Hit@1, Hit@3, average latency
+- Vector database: ChromaDB
+
+These results measure retrieval performance on a small,
+predefined evaluation set. They do not establish 100% response
+accuracy or guarantee performance on unseen questions.
+
+### Reproduce the Evaluation
+
+Run:
+
+    python -m evaluation.evaluate_rag
+
+Generated evaluation files:
+
+- evaluation/rag_evaluation_results.csv
+- evaluation/rag_evaluation_summary.json
